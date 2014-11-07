@@ -94,13 +94,15 @@ for i = 1:(M+1)
         resN(i,j) = u(xi(j), tk(i));
     end
 end
-% %format long;
-% format short;
+format long;
+ %format short;
 % 
 % %disp(xi);
 % %disp(tk);
- disp(res(1:50:end, :));
- disp(resN(1:50:end, :));
+disp(res(end, :));
+disp(resN(end, :));
+%  disp(res(1:50:end, :));
+%  disp(resN(1:50:end, :));
 % disp(abs(res-resN));
 
 end

@@ -1,6 +1,6 @@
 function [res resN h tau]= ClearMeth(N,M)
 
-T=0.1;
+T=0.01;
 h=1/N;
 i=0:N;
 xi=i*h;
@@ -67,8 +67,11 @@ for i = 1:(M+1)
         resN(i,j) = u(xi(j), tk(i));
     end
 end
-disp(res(1:50:end,:));
-disp(resN(1:50:end,:));
+format long;
+disp(res(end,:));
+disp(resN(end,:));
+% disp(res(1:50:end,:));
+% disp(resN(1:50:end,:));
 %disp(abs(res-resN));
 
 end
